@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/branco">
+
+    <EditText
+        android:id="@+id/txtDocumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Documento"
+        tools:ignore="RtlCompat"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <Spinner
+        android:id="@+id/spinnerCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cliente"
+        android:inputType="textPersonName"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:entries="@array/clientes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <EditText
+        android:id="@+id/txtHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Histórico"
+        tools:ignore="RtlCompat"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"/>
+
+</LinearLayout>

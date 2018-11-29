@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_orcamento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ActivityListOrcamento">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_orc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/title_list_orcamento">
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Informe abaixo o período de emissão para o filtro"
+            android:textAlignment="center"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/botaoInicio"
+            android:layout_width="47dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/calendario" />
+
+        <EditText
+            android:id="@+id/editDataInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="Data Início"
+            android:inputType="date"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/botaoFim"
+            android:layout_width="47dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/calendario" />
+
+        <EditText
+            android:id="@+id/editDataFim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlCompat"
+            android:hint="Data Final"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listOrcLancados"
+        android:layout_width="wrap_content"
+        android:layout_height="315dp"
+        android:layout_marginVertical="250dp"
+        >
+
+    </ListView>
+
+
+    <CalendarView
+        android:id="@+id/calendarInicio"
+        android:layout_marginTop="230dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CalendarView
+        android:id="@+id/calendarFim"
+        android:layout_marginTop="230dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <!--
+    <Spinner
+        android:id="@+id/spinnerDia"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="115dp"
+        android:entries="@array/dia" />
+
+    <Spinner
+        android:id="@+id/spinnerMes"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="185dp"
+        android:entries="@array/mes" />
+
+    <Spinner
+        android:id="@+id/spinnerAno"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="265dp"
+        android:entries="@array/ano" />
+-->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addOrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add" />
+
+</android.support.design.widget.CoordinatorLayout>

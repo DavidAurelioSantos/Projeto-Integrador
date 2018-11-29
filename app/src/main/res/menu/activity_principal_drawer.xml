@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Cadastro">
+        <menu>
+            <item
+                android:id="@+id/cadCliente"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Clientes" />
+
+            <item
+                android:id="@+id/cadFornecedor"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Fornecedores" />
+
+            <item
+            android:id="@+id/cadProdutos"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Produtos" />
+
+            <item
+                android:id="@+id/cadTransportadora"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Transportadoras" />
+        </menu>
+    </item>
+
+    <item android:title="Movimentações">
+        <menu>
+            <item
+                android:id="@+id/movOrcamento"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Orçamento / Pedido de Venda" />
+
+            <item
+                android:id="@+id/movFaturamento"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Faturamento" />
+
+            <item
+                android:id="@+id/movContrato"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Contratos" />
+
+            <item
+                android:id="@+id/movTitReceber"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Títulos a Receber" />
+
+            <item
+                android:id="@+id/movPedCompra"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Pedido de Compras" />
+
+            <item
+                android:id="@+id/movCompra"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Compras" />
+        </menu>
+    </item>
+
+    <!--
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+    -->
+
+    <item android:title="Communicação">
+        <menu>
+            <!--
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+                -->
+
+            <item
+                android:id="@+id/sair"
+                android:icon="@drawable/ic_sair"
+                android:title="Sair"/>
+        </menu>
+    </item>
+</menu>

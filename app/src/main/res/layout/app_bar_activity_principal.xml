@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ActivityPrincipal">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_activity_principal" />
+
+    <LinearLayout
+        android:id="@+id/ll_botao1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btCliente"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/estilo_botao"
+            android:textColor="@color/branco"
+            android:text="Cliente"/>
+
+        <Button
+            android:id="@+id/btFornecedor"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btCliente"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/estilo_botao"
+            android:textColor="@color/branco"
+            android:text="Fornecedor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_botao2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_botao1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btProdutos"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/estilo_botao"
+            android:textColor="@color/branco"
+            android:text="Produtos"/>
+
+        <Button
+            android:id="@+id/btTransportadoras"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btProdutos"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:background="@drawable/estilo_botao"
+            android:textColor="@color/branco"
+            android:textSize="12dp"
+            android:text="Transportadoras"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_botao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_botao2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btOrcamentos"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/estilo_botao"
+                android:textColor="@color/branco"
+                android:text="Orçamentos"/>
+
+            <Button
+                android:id="@+id/btFaturamento"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/btOrcamentos"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:background="@drawable/estilo_botao"
+                android:textColor="@color/branco"
+                android:text="Faturamento"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_botao4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_botao3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btContratos"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:background="@drawable/estilo_botao"
+                android:textColor="@color/branco"
+                android:text="Contratos"/>
+
+            <Button
+                android:id="@+id/btTitReceber"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/btContratos"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:background="@drawable/estilo_botao"
+                android:textColor="@color/branco"
+                android:text="Títulos a Receber"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_botao5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_botao4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btPedCompra"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/estilo_botao"
+                android:textColor="@color/branco"
+                android:text="Pedido de Compras"/>
+
+            <Button
+                android:id="@+id/btCompras"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/btContratos"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:background="@drawable/estilo_botao"
+                android:textColor="@color/branco"
+                android:text="Compras"/>
+
+        </LinearLayout>
+
+        <!--
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@android:drawable/ic_dialog_email" />
+                -->
+    </RelativeLayout>
+</ScrollView>

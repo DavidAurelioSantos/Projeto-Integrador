@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco">
+
+    <Spinner
+        android:id="@+id/spinnerProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:entries="@array/produtos">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/txtQtde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantidade"
+        android:inputType="number"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/txtPrcUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Preço Unitário"
+        android:inputType="numberDecimal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/txtValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor Total"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        tools:ignore="RtlCompat"/>
+
+    <Button
+        android:id="@+id/botaoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="17dp" />
+        -->
+
+</LinearLayout>

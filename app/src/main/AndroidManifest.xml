@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="integrador.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityPrincipal"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityOrcamento"
+            android:label="@string/title_orcamento"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityListOrcamento"
+            android:label="@string/title_list_orcamento"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityListClientes"
+            android:label="Clientes Cadastrados"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityCadCliDadosGerais"
+            android:label="@string/title_activity_cliente"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityCadCliEndereco"
+            android:label="@string/title_activity_cliente"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ZipCodeSearchActivity"
+            android:label="@string/title_activity_cliente"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityListFornecedores"
+            android:label="Fornecedores Cadastrados"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityCadFor"
+            android:label="@string/title_activity_fornecedor"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivityCadProduto"
+            android:label="@string/title_activity_produtos"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ZipCodeSearchActivityFor"
+            android:label="@string/title_activity_fornecedor"
+            android:windowSoftInputMode="stateHidden"></activity>
+    </application>
+
+</manifest>
